@@ -2,7 +2,7 @@ name: Sequential jobs
 on: push
 jobs:
   first: # 依存ジョブが無いので最初に実行される
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: sleep 10 && echo "First job"
   second: # firstジョブの後に実行される
