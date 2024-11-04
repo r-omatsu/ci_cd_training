@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: github-actions # パッケージエコシステム
+  - package-ecosystem: github-actions # パッケージエコシステム composerやdockerなども指定できる
     directory: / # パッケージマニフェストの配置先ディレクトリ
     schedule: # バージョンアップスケジュール
       interval: daily
