@@ -12,8 +12,8 @@ outputs: # アクションの出力
     value: ${{ steps.current.outputs.date }}
     description: ダンプ日時
 runs:
-  using: composite
-  steps: # アクションの実装方式
+  using: composite # アクションの実装方式 composite actionの場合は「composite」で固定
+  steps: # メインロジックを直接記述する
     - run: printenv | sort # アクションのメインロジック
       shell: bash
     - run: echo "${CONTEXT}"
