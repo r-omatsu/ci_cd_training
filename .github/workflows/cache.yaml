@@ -4,7 +4,7 @@ jobs:
   cache:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # 1. ソースコードのチェックアウト
+      - uses: actions/checkout@v5 # 1. ソースコードのチェックアウト
       - uses: actions/cache@v4 #  キャッシュの復元と保存 2. キャッシュアクションを呼び出し、ダミーファイルをキャッシュから復元
         with:
           key: test-${{ runner.os }}-${{ github.sha }} # キャッシュキー
